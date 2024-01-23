@@ -1,0 +1,20 @@
+  
+
+  <div class="card">
+    <div class="row">
+      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+        <div class= {{classAux}}>
+          <p>{{dateAux}}</p>
+          <div class="h5">{{levelAux}} </div>
+        </div>
+      </div>
+      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+        <div class="card-body">
+            <div class="h5">{{titleBox}} </div>
+            <p class ="category" [hidden]= "schoolAux == null"> {{schoolAux}} </p>
+          <p>{{dataAux}} </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
