@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataWebService } from 'src/app/services/data-web.service';
 
 @Component({
   selector: 'app-about',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+ 
+   aboutDetails : any;
+ 
+
+
+  constructor(private dataService:DataWebService) { }
 
   ngOnInit(): void {
+   
+     this.aboutDetails = this.dataService.About;
+     
   }
 
 }

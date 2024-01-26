@@ -9,7 +9,14 @@ export class DataWebService {
 
 
   private classInfo ="card-body cc-experience-header"
+
+  private aboutMe = 
+  { line1:'Hello! I am Antonio Brito. Web Developer, Graphic Designer and Photographer.',
+    line2:'Creative CV is a HTML resume template for professionals. Built with Bootstrap 4, Now UI Kit and FontAwesome, this modern and responsive design template is perfect to showcase your portfolio, skills and experience.',
+    Age: '34', Email:'antubrito@gmail.com', Phone:'519-111-0011', Address:'140, City Center, TORONTO, ON, CANADA',Language: 'Spanish,English'
+  }
   
+
   private titlesWorkExp = 
   [
     { dates: 'MARCH 2016 - PRESENT', level:'CREATIVEM',title: 'Front End Developer', school: '', data:'Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.' },
@@ -23,7 +30,7 @@ export class DataWebService {
   [
     { dates: '2013-2015', level:'Masters Degree',title: 'Master of Information Technology', school: 'UNIVERSITY OF COMPUTER SCIENCE', data:'Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.' },
     { dates: '2009-2013', level:'Bachelors Degree',title: 'Bachelor of Computer Science', school: 'UNIVERSITY OF COMPUTER SCIENCE' ,data:'Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.'},
-    { dates: '2007-2009', level:'High School',title: 'Science and Mathematics', school: 'SCHOOL OF SECONDARY BOARD xx',data:'Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.' }
+    { dates: '2007-2009', level:'High School',title: 'Science and Mathematics', school: 'SCHOOL OF SECONDARY BOARD',data:'Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.' }
   ];
 
 
@@ -50,7 +57,11 @@ export class DataWebService {
     return this.titlesEduccation;
   }
 
+ get About()
+ {
 
+  return this.aboutMe;
+}
 
   constructor() { }
 }
