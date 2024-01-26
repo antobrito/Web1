@@ -3,16 +3,39 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ContactmeComponent } from './components/contactme/contactme.component';
+import { ReferencesComponent } from './components/references/references.component';
+import { BannerInfoComponent } from './components/banner-info/banner-info.component';
+import { EducationComponent } from './components/education/education.component';
+import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
+import {DataWebService} from'./services/data-web.service';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { SkillComponent } from './components/skill/skill.component';
+import { AboutComponent } from './components/about/about.component';
+import { NavComponent } from './components/nav/nav.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    ContactmeComponent,
+    ReferencesComponent,
+    BannerInfoComponent,
+    EducationComponent,
+    WorkExperienceComponent,
+    PortfolioComponent,
+    SkillComponent,
+    AboutComponent,
+    NavComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,AppRoutingModule
   ],
-  providers: [],
+  providers: [DataWebService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
