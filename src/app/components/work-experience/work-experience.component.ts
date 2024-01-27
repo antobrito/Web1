@@ -14,11 +14,9 @@ export class WorkExperienceComponent implements OnInit {
   classProp:any;
 
   constructor(private dataService:DataWebService) {
-
    }
 
   ngOnInit(): void {
-
     this.titles = this.dataService.WorkExpPropTitles;
     this.classProp  = this.dataService.WorkExpClassProp;
   }

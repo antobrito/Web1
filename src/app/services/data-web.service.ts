@@ -16,6 +16,30 @@ export class DataWebService {
     Age: '34', Email:'antubrito@gmail.com', Phone:'519-111-0011', Address:'140, City Center, TORONTO, ON, CANADA',Language: 'Spanish,English'
   }
   
+  private referencesData =
+  [
+    {
+     Image:'assets/images/reference-image-1.jpg',
+     Name:'Aiyana',
+     Position: 'CEO / WEBM', 
+     Ref:'Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.' 
+    },
+    {
+      Image:'assets/images/reference-image-2.jpg',
+      Name:'Braiden',
+      Position: 'CEO / Creativem', 
+      Ref:'Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.' 
+     },
+
+     {
+      Image:'assets/images/reference-image-3.jpg',
+      Name:'Alexander',
+      Position: 'CEO / Webnote', 
+      Ref:'Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.' 
+     }
+ 
+
+  ]
 
   private titlesWorkExp = 
   [
@@ -63,5 +87,13 @@ export class DataWebService {
   return this.aboutMe;
 }
 
+get references()
+{
+
+  return this.referencesData;
+
+}
   constructor() { }
 }
+
+
