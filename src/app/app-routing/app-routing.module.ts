@@ -6,9 +6,11 @@ import { WorkExperienceComponent } from 'src/app/components/work-experience/work
 import { EducationComponent } from 'src/app/components/education/education.component';
 import { PortfolioComponent } from 'src/app/components/portfolio/portfolio.component';
 import { SkillComponent } from 'src/app/components/skill/skill.component';
-import { AboutComponent } from 'src/app//components/about/about.component';
+import { AboutComponent } from 'src/app/components/about/about.component';
+import { ListdataComponent } from 'src/app//components/listdata/listdata.component';
 import { ContactmeComponent } from 'src/app/components/contactme/contactme.component';
 import { ReferencesComponent } from 'src/app/components/references/references.component';
+
 
 
 const appRoutes: Routes = 
@@ -26,6 +28,11 @@ const appRoutes: Routes =
           component: EducationComponent},
   {path: 'references', 
           component: ReferencesComponent},
+  {path: 'listdata', 
+          component: ListdataComponent },
+
+          
+
 
 ];
 

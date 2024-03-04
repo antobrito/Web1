@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { collection, query, where } from "firebase/firestore";
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -57,8 +60,15 @@ export class DataWebService {
     { dates: '2007-2009', level:'High School',title: 'Science and Mathematics', school: 'SCHOOL OF SECONDARY BOARD',data:'Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.' }
   ];
 
-
-
+  getJobsSnap():Observable<any>
+  {
+       return this.firestone.collection('jobs',ref => ref.orderBy('dateCreation','desc')).snapshotChanges();
+  }
+  
+  deleteJob(id:string):Promise<any>
+  {
+     return this.firestone.collection('jobs').doc(id).delete();
+  }
 
   get WorkExpClassProp() 
   {
@@ -93,7 +103,15 @@ get references()
   return this.referencesData;
 
 }
-  constructor() { }
+
+
+
+constructor(private firestone: AngularFirestore) { }
+
+
+
+
+
 }
 
 
